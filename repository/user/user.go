@@ -2,7 +2,7 @@ package user
 
 import "context"
 
-type User interface {
+type Repository interface {
 	Register(ctx context.Context) (err error)
 	Login(ctx context.Context) (err error)
 	GetUserById(ctx context.Context) (err error)
