@@ -2,7 +2,7 @@ package avatar
 
 import "context"
 
-type Avatar interface {
+type Service interface {
 	Add(ctx context.Context) (err error)
 	Update(ctx context.Context) (err error)
 	Remove(ctx context.Context) (err error)
